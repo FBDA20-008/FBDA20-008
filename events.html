@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>events</title>
+	<link rel="stylesheet" href="e.css">
+</head>
+<body>
+<div class="class">
+       
+<ul class="nav-area">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="lifes.html">Lifestyle</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="connect.html">Connect with us</a></li>
+</ul>
+</div>
+<div class="wrapper">
+    <div class="our_team">
+       <div class="team team_1">
+           <div class="team_img">
+             <img src="img/20.jpg" alt="team_member">  
+         </div>
+         <div class="team_role">New Year (Shōgatsu)</div>
+         
+            <div class="menu">
+              <div></div>
+              <div></div>
+              <div></div>
+           </div>
+           
+           <div class="info">
+             <h4>since 1873</h4>
+             <p>The Japanese New Year is an annual festival with its own customs.</p>
+           </div>
+       </div>
+       <div class="team team_2">
+          <div class="team_img">
+             <img src="img/21.jpg" alt="team_member">  
+         </div>
+         <div class="team_role">Local Shrine Festivals</div>
+         <div class="menu">
+              <div></div>
+              <div></div>
+              <div></div>
+           </div>
+           
+           <div class="info">
+             <h4>(Matsuri)</h4>
+             <p>There are countless local festivals (祭り, matsuri) in Japan because almost every shrine celebrates one of its own.</p>
+           </div>
+      </div>
+       <div class="team team_3">
+         <div class="team_img">
+             <img src="img/22.jpg" alt="team_member">  
+         </div>
+         <div class="team_role">Winter Illuminations</div>
+         <div class="menu">
+              <div></div>
+              <div></div>
+              <div></div>
+           </div>
+           
+           <div class="info">
+             <h4>trail walk</h4>
+             <p>.Designed to be Louisville's premiere winter tradition, the one-mile trail features more than 10 light installations</p>
+           </div>
+      </div>
+       <div class="team team_4">
+         <div class="team_img">
+             <img src="img/23.jpg" alt="team_member">  
+         </div>
+         <div class="team_role">Cherry Blossom Festivals</div>
+         <div class="menu">
+              <div></div>
+              <div></div>
+              <div></div>
+           </div>
+           
+           <div class="info">
+             <h4>March 27, 1912</h4>
+             <p>The National Cherry Blossom Festival is a spring celebration in Washington, D.C.</p>
+           </div>
+      </div>
+  </div>
+</div>
+
+<script>
+var menu_items = document.querySelectorAll(".menu");
+
+
+Array.from(menu_items).forEach(function(menu){
+  menu.addEventListener("click", function(){
+    this.classList.toggle("active")
+  });
+});
+</script>
+
+</body>
+</html>
